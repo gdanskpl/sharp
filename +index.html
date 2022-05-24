@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dokument bez tytułu</title>
+</head>
+
+<style>
+
+div {
+    /* display:none */
+}
+
+</style>
+
+
+<body>
+
+    <picture>
+        <source srcset="compressed/image-resized-compressed-200x200.webp" type="image/webp">
+        <img src="compressed/image-resized-compressed-200x200.jpeg" alt="photo">
+    </picture>
+
+    <img src="compressed/image-resized-compressed-200x200.jpeg" alt="">
+    <img src="compressed/image-resized-compressed-200x200-org.jpeg" alt="">
+
+    <br>
+    <br>
+
+
+    <br>
+    <div>webp 23,5 kb</div>
+    <picture>
+        <source srcset="compressed/image-resized-compressed.webp" type="image/webp">
+        <img src="compressed/image-resized-compressed.jpeg" alt="photo">
+    </picture>
+    <br>
+
+
+    <br>
+
+    <div>jpeg 36 kb</div>
+
+    <img src="compressed/image-resized-compressed.jpeg" alt="">
+    <br>
+
+
+    <br>
+    <div>oryginal 131 kb</div>
+    <img src="oryginal/image3.jpg" alt="">
+    <br><br>
+
+    <form
+    action="/multiple-upload"
+    method="POST"
+    enctype="multipart/form-data">
+      ...
+      <input type="file" multiple>
+      ...
+  </form>
+
+
+
+
+
+
+
+</body>
+
+</html>
